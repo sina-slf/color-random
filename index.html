@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>train</title>
+</head>
+<body>
+    <h1>wellcom to color world</h1>
+    <p class="discription">you can faind a new color for your website</p>
+  <div>
+    <button id="hide">finish</button>
+    <button id="show">srart</button>
+  </div>
+    <button id="color">color random</button>
+    <div id="box"></div>
+            <p id="colorName"></p>
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgb(202, 231, 255);
+            background-repeat: no-repeat;
+        }
+        #box {
+            display: none;
+            margin-top: 20px;
+            width: 250px;
+            height: 250px;
+            border-radius: 12px;
+            background: blue;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        button {
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 5px 60px;
+            padding: 8px 18px;
+            border: none;
+            background: rgb(192, 255, 98);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #color {
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: rgb(193, 193, 193);
+            cursor: pointer;
+        }
+        #colorName {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 28px;
+            display: none;
+            padding: 12px;
+            border-radius: 12px;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        .discription {
+            padding-bottom: 8px;
+            text-align: center;
+            width: 250px;
+            font-family:cursive;
+            margin-bottom: 40px;
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+    <script src="app.js"></script>
+</body>
+</html>
